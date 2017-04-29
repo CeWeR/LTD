@@ -1,4 +1,4 @@
-bot_token = "183531221:AAHqvpuAkeeOEwkdtTT2g4RC87QhUUDD9es"
+bot_token = "285985426:AAEzkoxPQkHCkZNIXp2TA3O4up3Rd-yH8qw"
 send_api = "https://api.telegram.org/bot"..bot_token
 bot_version = "1.0"
-admingp = -129471512
+admingp = -191128096,351963104
