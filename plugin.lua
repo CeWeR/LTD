@@ -54,7 +54,7 @@ function run(msg)
 		end
 		bstat = i+1395
 		text = "نمایش آمار زنده:\n     زمان: "..os.date("%F - %H:%M:%S").."\n     کانال: "..rdjvn.result.."\n     ربات: "..bstat.."\n\n`برای تبادل و درج تبلیغات خود با ما در ارتباط باشید:`"
-		return send_inline(msg.from.id, text, {{{text = "ارتباط با مدیر تبلیغات" , url = "https://telegram.me/shayan_soft"}},{{text = "اگر ریپورت هستید برای ارتباط اینجا کلیک کنید" , url = "https://telegram.me/shayansoftBot"}},{{text = "برای سفارش هر گونه ربات کلیک کنید" , url = "https://telegram.me/shayan_soft"}}})
+		return send_inline(msg.from.id, text, {{{text = "ارتباط با مدیر تبلیغات" , url = "https://telegram.me/joker001001"}},{{text = "اگر ریپورت هستید برای ارتباط اینجا کلیک کنید" , url = "https://telegram.me/pmresan_M_bot"}},{{text = "برای سفارش هر گونه ربات کلیک کنید" , url = "https://telegram.me/morteza4718"}}})
 	elseif msg.text:find('/sendtoall') and msg.chat.id == admingp then
 		local usertarget = msg.text:input()
 		if usertarget then
@@ -133,7 +133,7 @@ function run(msg)
 	elseif msg.text == "ایجاد متن با فونتهای مختلف و هایپر لینک" then
 		users[userid].action = 1
 		save_data("users.json", users)
-		return send_key(msg.from.id, "از این طریق میتوانید متون خود را با فونتهای مختلف (قابلیت مارک داون) و قرار دادن لینک روی متن (هایپر لینک) ایجاد کنید.\n\n`برای کلفت نویسی، متن مورد نظر را بین 2 عدد * قرار دهید. دقت کنید این قابلیت مربوط به حروف انگلیسی است. مثال:\n*`Umbrella`* =` *Umbrella*\n\n`برای کج نویسی، متن مورد نظر را بین 2 عدد _ قرار دهید. دقت کنید این قابلیت مربوط به حروف انگلیسی است. مثال:\n_`Umbrella`_ = `_Umbrella_\n\n*برای ماشین نویسی یا نوشتن با حالت کدینگ، متن مورد نظر را بین 2 عدد ` قرار دهید. از این حالت میتوانید در حروف فارسی و انگلیسی بهره ببرید. مثال:\n`*Umbrella*`=*  `Umbrella`\n\n`برای قراردادن لینک روی متن و هایپر لینک، متن مورد نظر را بین [] قرار دهید و لینک مورد نظر را نیز بین () بگذارید. مثال:\n[Umbrella](telegram.me/umbrellateam)` = [Umbrella](telegram.me/umbrellateam)\n\nمتن خود را طبق فرمول گفته شده ارسال کنید:", {{"لغو"}}, true)
+		return send_key(msg.from.id, "از این طریق میتوانید متون خود را با فونتهای مختلف (قابلیت مارک داون) و قرار دادن لینک روی متن (هایپر لینک) ایجاد کنید.\n\n`برای کلفت نویسی، متن مورد نظر را بین 2 عدد * قرار دهید. دقت کنید این قابلیت مربوط به حروف انگلیسی است. مثال:\n*`Contributive`* =` *Contributive*\n\n`برای کج نویسی، متن مورد نظر را بین 2 عدد _ قرار دهید. دقت کنید این قابلیت مربوط به حروف انگلیسی است. مثال:\n_`Contributive`_ = `_Contributive_\n\n*برای ماشین نویسی یا نوشتن با حالت کدینگ، متن مورد نظر را بین 2 عدد ` قرار دهید. از این حالت میتوانید در حروف فارسی و انگلیسی بهره ببرید. مثال:\n`*Contributive*`=*  `Contributive`\n\n`برای قراردادن لینک روی متن و هایپر لینک، متن مورد نظر را بین [] قرار دهید و لینک مورد نظر را نیز بین () بگذارید. مثال:\n[Contributive](telegram.me/Contributive)` = [Contributive](telegram.me/Contributive)\n\nمتن خود را طبق فرمول گفته شده ارسال کنید:", {{"لغو"}}, true)
 	elseif msg.text == "ارسال کیبرد شیشه ای به کانال" then
 		users[userid].action = 2
 		save_data("users.json", users)
@@ -147,7 +147,7 @@ function run(msg)
 		save_data("users.json", users)
 		return send_key(msg.from.id, "`يک عکس، ويدئو، گيف یا فايل فوروارد یا ارسال نماييد. حداکثر حجم مجاز 50 مگابايت ميباشد.`", {{"لغو"}}, true)
 	elseif msg.text == "مثال کیبرد اینلاین" then
-		return send_inline(msg.from.id, "`تیتر کیبرد اینلاین با قابلیت استفاده از قابلیت مارک داون و هایپر لینک.`", {{{text = "وبسایت تیم آمبرلا" , url = "http://Umbrella.shayan-soft.ir"}},{{text = "کانال تیم آمبرلا" , url = "https://telegram.me/UmbrellaTeam"}}})
+		return send_inline(msg.from.id, "`تیتر کیبرد اینلاین با قابلیت استفاده از قابلیت مارک داون و هایپر لینک.`", {{{text = " سازنده " , url = "http://telegram.me/morteza4718"}},{{text = "کانال تیم کمک کننده" , url = "https://telegram.me/Contributive"}}})
 	end
 	
 	if users[userid].action == 0 then
@@ -198,7 +198,7 @@ function run(msg)
 		users[userid].action = 22
 		users[userid].tabtxt = msg.text
 		save_data("users.json", users)
-		return send_msg(msg.from.id, "`لینکی که میخواهید این کلید نماینده ی آن باشد را وارد کنید\nمثال: https://telegram.me/umbrellateam`", true)
+		return send_msg(msg.from.id, "`لینکی که میخواهید این کلید نماینده ی آن باشد را وارد کنید\nمثال: https://telegram.me/Contributive`", true)
 	elseif users[userid].action == 22 then
 		if users[userid].tables == "" then
 			tabtab = ""
@@ -214,7 +214,7 @@ function run(msg)
 			save_data("channels.json", channels)
 			users[userid].action = 0
 			save_data("users.json", users)
-			send_msg(msg.from.id, "`@LTDbot "..hashid.."`", true)
+			send_msg(msg.from.id, "`@Contributiveذخف "..hashid.."`", true)
 			return send_key(msg.from.id, "`کیبرد شیشه ای ساخته شد، متن زیر را در محل تایپ وارد نمایید و منتظر بمانید تا کلید ارسال ظاهر شود، با کلیک روی کلید کیبرد شما به محل مورد نظر ارسال میگردد. دقت کنید این کد را به دفعات مختلف میتوانید استفاده کنید و اطلاعات آن در دیتا بیس میماند.`", keyboard)
 		else
 			users[userid].tab = users[userid].tab-1
@@ -282,14 +282,14 @@ function inline(msg)
 	tab1 = '{"type":"article","parse_mode":"Markdown","disable_web_page_preview":true,"id":'
 	thumb = "http://umbrella.shayan-soft.ir/inline_icons/"
 	if msg.query == "" or msg.query == nil then
-		tab_inline = tab1..'"1","title":"کد را وارد کنید","description":"کد کیبردی که قبلا ساخته اید را وارد کنید یا همینک آن را بسازید","message_text":"جهت ساخت کیبرد به پی وی ربات مراجعه کنید\n@LTDbot","thumb_url":"'..thumb..'ltd.png"}'
+		tab_inline = tab1..'"1","title":"کد را وارد کنید","description":"کد کیبردی که قبلا ساخته اید را وارد کنید یا همینک آن را بسازید","message_text":"جهت ساخت کیبرد به پی وی ربات مراجعه کنید\n@Contributivebot","thumb_url":"'..thumb..'ltd.png"}'
 	else
 		channels = load_data("channels.json")
 		if channels[tostring(msg.query)] then
 			tabless = channels[tostring(msg.query)].tables:gsub("\\","")
 			tab_inline = tab1..'"2","title":"ارسال کیبرد","description":"جهت ارسال کیبرد اینجا کلیک کنید","message_text":"'..channels[tostring(msg.query)].title..'","thumb_url":"'..thumb..'keyk_ok.png","reply_markup":{"inline_keyboard":['..tabless..']}}'
 		else
-			tab_inline = tab1..'"3","title":"کد صحیح نیست","description":"کد کیبرد وارد شده صحیح نیست، برای ساخت کلیک کنید","message_text":"جهت ساخت کیبرد به پی وی ربات مراجعه کنید\n@LTDbot","thumb_url":"'..thumb..'ltder.png"}'
+			tab_inline = tab1..'"3","title":"کد صحیح نیست","description":"کد کیبرد وارد شده صحیح نیست، برای ساخت کلیک کنید","message_text":"جهت ساخت کیبرد به پی وی ربات مراجعه کنید\n@Contributivebot","thumb_url":"'..thumb..'ltder.png"}'
 		end
 	end
 	return send_req(send_api.."/answerInlineQuery?inline_query_id="..msg.id.."&is_personal=true&cache_time=1&results="..url.escape('['..tab_inline..']'))
